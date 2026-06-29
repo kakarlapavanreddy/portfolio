@@ -4,17 +4,15 @@ const aboutData = {
   subtitle:
     "I am a passionate Frontend Developer who enjoys building modern, responsive, and user-friendly web applications using React and Tailwind CSS.",
 
-  image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43",
-
   stats: [
     {
       id: 1,
-      title: "2+",
+      title: "Fresher",
       description: "Years Experience",
     },
     {
       id: 2,
-      title: "25+",
+      title: "5+",
       description: "Completed Projects",
     },
     {
@@ -23,6 +21,8 @@ const aboutData = {
       description: "Client Satisfaction",
     },
   ],
+
+  image: "/images/about.jpeg",
 };
 
 export default aboutData;

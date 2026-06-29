@@ -1,7 +1,5 @@
 import heroData from "../../data/heroData";
-
 import Button from "../Button/Button";
-
 import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 
 function Hero() {
@@ -25,15 +23,12 @@ function Hero() {
 
           <div className="mt-8 flex gap-4">
             <Button text="Hire Me" />
-
             <Button text="Download CV" />
           </div>
 
           <div className="mt-8 flex gap-6 text-2xl">
             <FaGithub className="cursor-pointer hover:text-blue-600 transition" />
-
             <FaLinkedin className="cursor-pointer hover:text-blue-600 transition" />
-
             <FaInstagram className="cursor-pointer hover:text-blue-600 transition" />
           </div>
         </div>
