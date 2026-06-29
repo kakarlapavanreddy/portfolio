@@ -1,6 +1,7 @@
 import aboutData from "../../data/aboutData";
 import AboutCard from "./AboutCard";
 import SectionTitle from "../SectionTitle/SectionTitle";
+import aboutImage from "../../assets/images/about.jpeg";
 import Button from "../Button/Button";
 
 function About() {
@@ -14,7 +15,7 @@ function About() {
 
           <div>
             <img
-              src={aboutData.image}
+              src={aboutImage}
               alt="About"
               className="mx-auto h-[450px] w-[350px] rounded-2xl object-cover shadow-xl"
             />

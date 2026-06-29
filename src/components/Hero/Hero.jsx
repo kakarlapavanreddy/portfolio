@@ -1,5 +1,6 @@
 import heroData from "../../data/heroData";
 import Button from "../Button/Button";
+import profileImage from "../../assets/images/profile.jpeg";
 import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 
 function Hero() {
@@ -37,7 +38,7 @@ function Hero() {
 
         <div>
           <img
-            src={heroData.image}
+            src={profileImage}
             alt="Profile"
             className="h-96 w-96 rounded-full object-cover shadow-xl"
           />
