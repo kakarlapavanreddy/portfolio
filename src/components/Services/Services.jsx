@@ -1,36 +1,43 @@
-import SectionTitle from "../SectionTitle/SectionTitle";
-
 import ServiceCard from "./ServiceCard";
 
-import services from "../../data/servicesData";
-
 function Services() {
+  const services = [
+    {
+      id: 1,
+      title: "Web Development",
+      description:
+        "Building responsive and modern websites using React and Tailwind.",
+      icon: "💻",
+    },
+    {
+      id: 2,
+      title: "UI Design",
+      description: "Clean and user-friendly interface designs for better UX.",
+      icon: "🎨",
+    },
+    {
+      id: 3,
+      title: "API Integration",
+      description: "Connecting frontend with backend services efficiently.",
+      icon: "🔗",
+    },
+  ];
+
   return (
-    <section id="services" className="bg-gray-50 py-20">
-      <div
-        className="mx-auto
-            max-w-7xl
-            px-6"
-      >
-        <SectionTitle title="My Services" subtitle="What I Can Do" />
+    <section className="py-16 px-6 max-w-6xl mx-auto">
+      {/* Section Title */}
+      <h2 className="text-3xl font-bold text-center mb-10">My Services</h2>
 
-        <div
-          className="grid
-                gap-8
-
-                md:grid-cols-2
-
-                lg:grid-cols-3"
-        >
-          {services.map((service) => (
-            <ServiceCard
-              key={service.id}
-              icon={service.icon}
-              title={service.title}
-              description={service.description}
-            />
-          ))}
-        </div>
+      {/* Grid */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {services.map((service) => (
+          <ServiceCard
+            key={service.id}
+            title={service.title}
+            description={service.description}
+            icon={service.icon}
+          />
+        ))}
       </div>
     </section>
   );
